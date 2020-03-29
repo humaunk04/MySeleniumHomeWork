@@ -4,9 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+import java.util.Random;
+
 public class RegisterSafari {
     public static void main ( String [] args) throws InterruptedException {
         safari();
+
 
 
     }
@@ -17,6 +20,7 @@ public class RegisterSafari {
         humaun.navigate().to("https://demo.broadleafcommerce.org/login");
         String homepage = humaun.getTitle();
         System.out.println(homepage);
+
 
         humaun.findElement(By.xpath("//*[@id=\"customer.emailAddress\"]")).sendKeys("humaunk04@hotmail.com");
         Thread.sleep(500);
