@@ -61,8 +61,8 @@ public class CheckOutChrome {
         Thread.sleep(500);
 
         Select selectQty = new Select(driver.findElement(By.name("quantity")));
-        selectQty.selectByVisibleText("99");
-        System.out.println("Select quantity 99");
+        selectQty.selectByVisibleText("89");
+        System.out.println("Select quantity 89");
         Thread.sleep(500);
 
         WebElement clickCheckout = driver.findElement(By.xpath("//*[@id=\"cart\"]/div[3]/div[1]/div[2]/div[6]/div[1]/a"));
@@ -122,11 +122,11 @@ public class CheckOutChrome {
 
        // driver.findElement(By.xpath("//*[@id=\"credit_card_payment_method\"]/div/div/div[1]/div/div[2]/div/div")).click();
 
-       //driver.findElement(By.xpath("//*[@id=\"credit_card_payment_method\"]/div/div/div[1]/div/div[1]/div/div/div")).click();
-       //driver.findElement(By.xpath("//*[@id=\"checkout\"]/div[2]/div/div[2]/div[2]/div[3]/div[2]/a")).click();
+       driver.findElement(By.xpath("//*[@id=\"credit_card_payment_method\"]/div/div/div[1]/div/div[1]/div/div/div")).click();
+       driver.findElement(By.xpath("//*[@id=\"checkout\"]/div[2]/div/div[2]/div[2]/div[3]/div[2]/a")).click();
        //driver.findElement(By.xpath("//a[@ class ='btn btn-primary pull-right js-performcheckout']" )).click();
 
-        //driver.findElement(By.xpath("/html/body/div[2]/div/div/div[3]/div[1]/div[2]/div[6]/a")).click();
+        driver.findElement(By.xpath("/html/body/div[2]/div/div/div[3]/div[1]/div[2]/div[6]/a")).click();
 
        WebElement clickCreditCard = driver.findElement(By.xpath("//*[@id=\"payment_methods\"]/div[1]/div/ul/li[1]/a"));
         clickCreditCard.click();
